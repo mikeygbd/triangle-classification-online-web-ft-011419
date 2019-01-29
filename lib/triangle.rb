@@ -1,9 +1,9 @@
 class Triangle
 
-  attr_accessor :side1, :side2, :side3, :equilateral, :isosceles, :scalene
+  attr_accessor :a, :b, :c, :equilateral, :isosceles, :scalene
 
 
-  def initialize(side1, side2, side3)
+  def initialize(a, b, c)
     @sides = []
     @sides << self
 
@@ -11,9 +11,12 @@ class Triangle
   end
 
   def kind
+    if a, b, c.same_values?
+      @equilateral
+
 
     if @sides.same_values?
-      @equilateral
+
     # elsif @sides
     #
     #
