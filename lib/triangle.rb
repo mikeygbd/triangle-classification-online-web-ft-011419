@@ -15,7 +15,7 @@ class Triangle
       @equilateral
 
 
-    if @sides.same_values?
+    # if @sides.same_values?
 
     # elsif @sides
     #
