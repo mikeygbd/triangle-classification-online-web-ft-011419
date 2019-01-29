@@ -19,6 +19,6 @@ class Triangle
     #
     # @isosceles
     # @scalene
-
+  end
   end
 end
