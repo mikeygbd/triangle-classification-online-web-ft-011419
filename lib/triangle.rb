@@ -11,9 +11,14 @@ class Triangle
   end
 
   def kind
-    @equilateral =
-    @isosceles
-    @scalene
+
+    if @sides.same_values?
+      @equilateral
+    # elsif @sides
+    #
+    #
+    # @isosceles
+    # @scalene
 
   end
 end
