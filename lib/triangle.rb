@@ -1,16 +1,16 @@
 class Triangle
 
-  attr_accessor :a, :b, :c, :equilateral, :isosceles, :scalene
+  attr_accessor :one, :two, :three, :equilateral, :isosceles, :scalene
 
 
-  def initialize(a, b, c)
+  def initialize(one, two, three)
     @sides = []
     @sides << self
 
 
   end
 
-  def kind(a, b, c)
+  def kind(one, two, thre)
     triangles = {equilateral: [60,60,60], isosceles: [0], scalene: [0]}
     angle_a = (Math.acos((two**2+three**2-one**2)/(2*two*three).to_f)*180/Math::PI).round(2)
     angle_b = (Math.acos((three**2+one**2-two**2)/(2*three*one).to_f)*180/Math::PI).round(2)
