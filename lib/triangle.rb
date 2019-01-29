@@ -9,7 +9,6 @@ class Triangle
     if @sides.any? {|side| side <= 0}
       raise TriangleError.new, "Unable to create triangle"
     end
-  end
 
       @sides.combination(2).each do |combination|
         last_side = @sides.clone
