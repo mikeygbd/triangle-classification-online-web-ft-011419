@@ -11,7 +11,7 @@ class Triangle
   end
 
   def kind
-    if a, b, c.same_values?
+    if self.same_values?
       @equilateral
 
 
