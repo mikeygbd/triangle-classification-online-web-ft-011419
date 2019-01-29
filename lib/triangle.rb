@@ -9,7 +9,7 @@ class Triangle
       raise TriangleError.new, "Cannot create a triangle "
     end
 
-    @sides.combo(2).each do |combo|
+    @sides.combonation(2).each do |combo|
       last_side = @sides.clone
       combo.each {|item| last_side.delete(item)}
       if !last_side.empty? && combo.inject(:+) <= last_side.first
