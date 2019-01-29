@@ -2,8 +2,8 @@ class TriangleError < StandardError
 end
 
 class Triangle
-  def initialize(s1, s2, s3)
-    @sides = [s1, s2, s3]
+  def initialize(a, b, c)
+    @sides = [a, b, c]
 
     if @sides.any? {|side| side <= 0}
       raise TriangleError.new, "Cannot create a triangle "
