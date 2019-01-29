@@ -10,15 +10,15 @@ class Triangle
       raise TriangleError.new, "Unable to create triangle"
     end
 
-      # @sides.combination(2).each do |combo|
-      #   last_side = @sides.clone
-      #   combo.each {|item| last_side.delete(item)}
-      #   if !last_side.empty? && combo.inject(:+) <= last_side.first
-      #     raise TriangleError.new, "Cannot create a triangle"
-      #   end
-      # end
-      #
-      # classify
+      @sides.combination(2).each do |combo|
+        last_side = @sides.clone
+        combo.each {|item| last_side.delete(item)}
+        if !last_side.empty? && combo.inject(:+) <= last_side.first
+          raise TriangleError.new, "Cannot create a triangle"
+        end
+      end
+
+      classify
     end
 
     def classify
